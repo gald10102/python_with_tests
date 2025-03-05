@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main  # ניתן לשנות לפי הענף שבו אתה רוצה להריץ את ה-workflow
+   workflow_dispatch: 
 
 jobs:
   build:
@@ -29,3 +30,4 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover -s . -p "test_*.py"  # מריץ את הבדיקות
+
