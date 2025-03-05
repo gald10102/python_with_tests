@@ -3,7 +3,7 @@ from unittest.mock import patch
 from main import get_status_code
 
 class TestMain(unittest.TestCase):
-
+#dsadasdsa
     @patch('requests.get')
     def test_get_status_code_success(self, mock_get):
         # הגדרת Mock לתגובה של הבקשה
