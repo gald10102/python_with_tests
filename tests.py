@@ -13,7 +13,7 @@ class TestMain(unittest.TestCase):
         self.assertEqual(result, 200)
 
     @patch('requests.get')
-    def test_get_status_code_failure(self, mock_get):
+    def test_get_status_code_failure(self, mock_get): #dsad
         # הגדרת Mock שמחזיר שגיאה
         mock_get.side_effect = requests.exceptions.RequestException("Network error")
         
