@@ -7,7 +7,6 @@ on:
   pull_request:
     branches:
       - main  # ניתן לשנות לפי הענף שבו אתה רוצה להריץ את ה-workflow
-   workflow_dispatch: 
 
 jobs:
   build:
